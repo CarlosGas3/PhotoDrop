@@ -1,0 +1,134 @@
+.container {
+    background-color: var(--background-color);
+    grid-row: 2/4;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    gap: 0.5rem;
+}
+
+.cajetin {
+    width: 80%;
+    height: 45%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 0.4rem;
+    padding: 1rem;
+    border: 1px solid var(--border-color);
+    border-radius: 10px;
+    box-shadow: 0 20px 25px -5px rgb(0 0 0 / 0.1),
+        0 8px 10px -6px rgb(0 0 0 / 0.1);
+    position: relative;
+}
+
+.errormsg {
+    position: absolute;
+    bottom: -4.5rem;
+    border: 1px solid var(--border-color);
+    border-radius: 10px;
+    box-shadow: 0 20px 25px -5px rgb(0 0 0 / 0.1),
+        0 8px 10px -6px rgb(0 0 0 / 0.1);
+    padding: 10px;
+    text-align: center;
+    background-color: var(--background-color);
+    color: rgb(192, 77, 77);
+
+}
+
+.login {
+    font-size: 2rem;
+    text-align: center;
+    width: 100%;
+    height: auto;
+}
+
+.form {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 0.4rem;
+    width: 100%;
+    height: auto;
+}
+
+.main a {
+    font-style: italic;
+    color: grey;
+    text-decoration: none;
+    width: 100%;
+    height: auto;
+}
+
+.registrate {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    width: 100%;
+    height: auto;
+}
+
+.boton {
+    border-radius: 10px;
+    padding: 0.3rem;
+}
+
+/* MEDIAS QUERY */
+
+@media (min-width: 390px) {
+    .login {
+        font-size: 3rem;
+        padding-bottom: 2rem;
+    }
+    .form {
+        padding-bottom: 1rem;
+    }
+    .input {
+        width: 230px;
+        margin: 0.1rem;
+        padding: 3px 0;
+        font-size: 1rem;
+    }
+    .boton {
+        padding: 3px 7px;
+        font-size: 1rem;
+    }
+    .registrate,
+    main a {
+        font-size: 1.2rem;
+    }
+}
+
+@media (min-width: 820px) {
+    .login {
+        font-size: 3.3rem;
+    }
+    .input {
+        width: 350px;
+        padding: 3px 0;
+        font-size: 1.2rem;
+    }
+    .boton {
+        font-size: 1.2rem;
+    }
+    .registrate,
+    main a {
+        font-size: 1.4rem;
+    }
+}
+
+@media (min-width: 900px) {
+    .main {
+        overflow: hidden;
+        grid-column: 1/4;
+    }
+
+    .cajetin{
+        width: 70%;
+    }
+}

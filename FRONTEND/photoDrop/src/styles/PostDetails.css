@@ -1,0 +1,144 @@
+div.PageoverflowHidden{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100vw;
+}
+
+
+.postDetailsContainer {
+    position:relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    background-color: var(--background-color);
+    border: 1px solid var(--border-color);
+    margin: 1rem;
+    border-radius: 10px;
+    box-shadow: 0 20px 25px -5px rgb(0 0 0 / 0.1),
+        0 8px 10px -6px rgb(0 0 0 / 0.1);
+}
+
+.pd-postUser {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 0.5rem;
+    padding: 0 1rem;
+    margin-top: 0.5rem;
+    font-style: italic;
+    color:grey;
+}
+
+.pd-first {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+}
+
+
+.pd-userName {
+    font-size: 13px;
+    font-style: italic;
+    color:grey;
+}
+
+.pd-postTitle {
+    font-weight: 500;
+    font-size: 15px;
+    padding: 0.5rem 1rem;
+}
+
+.profilePicture {
+    width: 25px;
+    height: 25px;
+    border-radius: 20px;
+    border: 1px solid var(--border-color);
+    object-fit: cover;
+}
+
+.pd-postSocials {
+    display: flex;
+    gap: 1.5rem;
+    padding: 0.5rem 1rem;
+    color: grey;
+}
+
+.pd-likes,
+.pd-comments {
+    display: flex;
+    align-items: center;
+    gap: 0.3rem;
+}
+
+.pd-postDescription {
+    font-size: 10px;
+    padding: 0 1rem;
+}
+
+.pd-postComments {
+    cursor: pointer;
+    width: 100%;
+    font-size: 12px;
+    padding: 0.5rem 1rem;
+    font-style: italic;
+    color: grey;
+}
+
+.pd-postDate {
+    width: 100%;
+    padding: 0.5rem 1rem;
+    font-size: 10px;
+    text-align: end;
+    color: grey;
+}
+
+@media (min-width: 500px){
+    .postDetailsContainer{
+        max-width: 60%;
+    }
+}
+
+@media (min-width: 900px){
+    .postDetailsContainer{
+        max-width: 50%;
+    }
+}
+
+@media (min-height: 900px){ 
+    .postDetailsContainer {
+       width: 30%;
+    }
+    
+    .pd-postUser {
+        height: auto;
+        padding: 1rem;
+    }   
+    .pd-userName {
+        font-size: 20px;
+    }
+    
+    .pd-postTitle {
+        font-size: 25px;    
+    }
+    
+    .pd-likes,
+    .pd-comments {
+        font-size: 20px;
+    }
+    
+    .pd-postDescription {
+        font-size: 15px;;
+    }
+    
+    .pd-postComments {
+        font-size: 15px;
+    }
+    
+    .pd-postDate {
+        font-size: 15xºpx;
+    }
+}
+

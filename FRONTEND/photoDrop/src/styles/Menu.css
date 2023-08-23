@@ -1,0 +1,56 @@
+@keyframes pulse2 {
+    0% {
+        transform: scale(1);
+        opacity: 50%;
+    }
+    50% {
+        transform: scale(1.2);
+        opacity: 80%;
+    }
+
+    100% {
+        transform: scale(1);
+        opacity: 100%;
+    }
+}
+
+.menu {
+    position: relative;
+}
+.post-modal {
+    color: grey;
+    width: 150px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 0.5rem;
+    position: absolute;
+    top: 0px;
+    right: 25px;
+    z-index: 1;
+    background-color: var(--background-color);
+    border: 1px solid var(--border-color);
+    border-radius: 10px;
+    padding: 1rem 0.5rem;
+    box-shadow: 0 20px 25px -5px rgb(0 0 0 / 0.1),
+        0 8px 10px -6px rgb(0 0 0 / 0.1);
+    font-style: italic;
+    animation: pulse2 0.3s;
+}
+
+.post-modal-div {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 0.5rem;
+    cursor: pointer;
+}
+
+.editarBorrar {
+    color: grey;
+}
+
+.hidden {
+    display: none;
+}

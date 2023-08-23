@@ -1,0 +1,38 @@
+footer {
+    background-color: var(--background-color);
+    width: 100%;
+    padding: 0.2rem;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    border-top: 1px solid var(--border-color);
+}
+.material-symbols-rounded {
+    color: rgb(183, 183, 183);
+}
+.material-symbols-rounded.active {
+    color: black;
+}
+
+.material-symbols-rounded.hidden {
+    display: none;
+}
+
+.profilePictureFooter {
+    width: 21px;
+    height: 21px;
+    border-radius: 20px;
+    margin-bottom: 3px;
+    border-bottom: 1px solid var(--border-color);
+    color:black;
+    object-fit: cover;
+}
+
+
+@media (min-width: 900px) {
+    footer {
+        flex-direction: column;
+        grid-row: 2/3;
+        border-right: 1px solid var(--border-color);
+    }
+}
