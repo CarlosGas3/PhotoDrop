@@ -20,7 +20,7 @@
     display: flex;
     flex-direction: column;
     align-items: center;
-    gap:1rem;
+    gap: 1rem;
 }
 
 .profileUserData {
@@ -56,14 +56,20 @@
     padding: 1rem;
 }
 
+.profilePagePosts img {
+    width: 100%;
+    height: auto;
+    box-shadow: 0px 0px 20px black;
+    border-radius: 0.5rem;
+}
+
 .profilePagePosts {
     width: 90%;
     height: auto;
-    display: flex;
-    flex-wrap: wrap;
-    align-content: start;
-    justify-content: start;
-    gap: 0.5rem;
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+    gap: 6rem;
+    padding-bottom: 1rem;
 }
 
 .postProfileTitle {

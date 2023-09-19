@@ -34,10 +34,6 @@ img {
     object-fit: cover;
 }
 
-::-webkit-scrollbar {
-    display: none;
-}
-
 .hidden {
     display: none;
 }
@@ -46,7 +42,7 @@ img {
     overflow: hidden;
 }
 
-.input{
+.input {
     padding: 0.3rem;
 }
 
@@ -58,7 +54,7 @@ img {
 }
 
 @media (min-height: 900px) {
-    img{
+    img {
         max-height: 500px;
     }
     .profilePicture {
